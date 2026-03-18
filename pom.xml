@@ -3,17 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sysnormal.libs.commons</groupId>
-    <artifactId>default-data-swap</artifactId>
+    <groupId>com.sysnormal.commons.core</groupId>
+    <artifactId>default-data-swap-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-	<name>default-data-swap</name>
+	<name>default-data-swap-core</name>
 
     <description>Common library to swap data between process</description>
-    <url>https://github.com/sysnormal1/java-devault-data-swap</url>
+    <url>https://github.com/sysnormal1/devault-data-swap-core</url>
 
     <organization>
         <name>SYSNORMAL</name>
-        <url>https://github.com/sysnormal1/java-devault-data-swap</url>
+        <url>https://github.com/sysnormal1/devault-data-swap-core</url>
     </organization>
 
     <licenses>
@@ -24,9 +24,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/sysnormal1/java-devault-data-swap</url>
-        <connection>scm:git:git://github.com/sysnormal1/java-devault-data-swap.git</connection>
-        <developerConnection>scm:git:ssh://github.com/sysnormal1/java-devault-data-swap.git</developerConnection>
+        <url>https://github.com/sysnormal1/devault-data-swap-core</url>
+        <connection>scm:git:git://github.com/sysnormal1/devault-data-swap-core.git</connection>
+        <developerConnection>scm:git:ssh://github.com/sysnormal1/devault-data-swap-core.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -46,33 +46,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>4.0.2</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
 	<dependencies>
-
-        <!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-core -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <optional>true</optional>
-        </dependency>
 
 	</dependencies>
 
@@ -102,25 +76,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-toolchains-plugin</artifactId>
-                <version>3.2.0</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>toolchain</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <toolchains>
-                        <jdk>${java.version}</jdk>
-                    </toolchains>
-                </configuration>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

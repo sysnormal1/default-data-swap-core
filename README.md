@@ -1,4 +1,6 @@
-# DefaultDataSwap
+# Default Data Swap
+![Java](https://img.shields.io/badge/Java-21-blue)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 
 This class is part of the Java project and is responsible for data swapping functionality.
 
@@ -19,8 +21,8 @@ Add the dependency below to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>com.sysnormal.libs.commons</groupId>
-    <artifactId>default-data-swap</artifactId>
+    <groupId>com.sysnormal.commons.core</groupId>
+    <artifactId>default-data-swap-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -40,7 +42,7 @@ return swapper;
 To get started locally:
 
 ```bash
-git clone https://github.com/sysnormal1/java-default-data-swap.git
+git clone https://github.com/sysnormal1/default-data-swap-core.git
 cd default-data-swap
 mvn install
 ```
@@ -66,4 +68,10 @@ GitHub: [@aalencarvz1](https://github.com/aalencarvz1)
 
 ---
 
-> 🔗 Published on [Maven Central (Sonatype)](https://central.sonatype.com/artifact/io.github.aalencarvz1.libs.commons/default-data-swap)
+## 👤 Organization
+
+**Sysnormal**  
+GitHub: [@sysnormal1](https://github.com/sysnormal1)
+
+---
+
