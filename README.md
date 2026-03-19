@@ -1,4 +1,5 @@
 # Default Data Swap
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.sysnormal1.commons.core/default-data-swap-core.svg)](https://central.sonatype.com/artifact/io.github.sysnormal1.commons.core/default-data-swap-core)
 ![Java](https://img.shields.io/badge/Java-21-blue)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 
