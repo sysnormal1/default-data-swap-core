@@ -21,9 +21,9 @@ Add the dependency below to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>com.sysnormal.commons.core</groupId>
+    <groupId>io.github.sysnormal1.commons.core</groupId>
     <artifactId>default-data-swap-core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 </dependency>
 ```
 
