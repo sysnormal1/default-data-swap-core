@@ -9,11 +9,11 @@
 	<name>default-data-swap-core</name>
 
     <description>Common library to swap data between process</description>
-    <url>https://github.com/sysnormal1/devault-data-swap-core</url>
+    <url>https://github.com/sysnormal1/default-data-swap-core</url>
 
     <organization>
         <name>SYSNORMAL</name>
-        <url>https://github.com/sysnormal1/devault-data-swap-core</url>
+        <url>https://github.com/sysnormal1/default-data-swap-core</url>
     </organization>
 
     <licenses>
@@ -24,9 +24,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/sysnormal1/devault-data-swap-core</url>
-        <connection>scm:git:git://github.com/sysnormal1/devault-data-swap-core.git</connection>
-        <developerConnection>scm:git:ssh://github.com/sysnormal1/devault-data-swap-core.git</developerConnection>
+        <url>https://github.com/sysnormal1/default-data-swap-core</url>
+        <connection>scm:git:git://github.com/sysnormal1/default-data-swap-core.git</connection>
+        <developerConnection>scm:git:ssh://github.com/sysnormal1/default-data-swap-core.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
