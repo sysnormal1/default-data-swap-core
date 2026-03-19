@@ -3,9 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sysnormal.commons.core</groupId>
+    <!--<groupId>com.sysnormal.commons.core</groupId>-->
+    <groupId>io.github.sysnormal1.commons.core</groupId>
     <artifactId>default-data-swap-core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 	<name>default-data-swap-core</name>
 
     <description>Common library to swap data between process</description>
@@ -50,7 +51,7 @@
 
 	</dependencies>
 
-    <distributionManagement>
+    <!--<distributionManagement>
         <snapshotRepository>
             <id>central-snapshots</id>
             <url>https://central.sonatype.com/repository/maven-snapshots/</url>
@@ -62,7 +63,7 @@
             </snapshots>
         </snapshotRepository>
         <repository>
-            <id>central-releases</id>
+            <id>central5</id>
             <name>Central Repository</name>
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
             <releases>
@@ -72,7 +73,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <build>
         <plugins>
@@ -135,6 +136,7 @@
                     <checksums>required</checksums>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
