@@ -24,7 +24,7 @@ Add the dependency below to your `pom.xml`:
 <dependency>
     <groupId>io.github.sysnormal1.commons.core</groupId>
     <artifactId>default-data-swap-core</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
