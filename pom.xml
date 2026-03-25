@@ -6,7 +6,7 @@
     <!--<groupId>com.sysnormal.commons.core</groupId>-->
     <groupId>io.github.sysnormal1.commons.core</groupId>
     <artifactId>default-data-swap-core</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
 	<name>default-data-swap-core</name>
 
     <description>Common library to swap data between process</description>
@@ -50,30 +50,6 @@
 	<dependencies>
 
 	</dependencies>
-
-    <!--<distributionManagement>
-        <snapshotRepository>
-            <id>central-snapshots</id>
-            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </snapshotRepository>
-        <repository>
-            <id>central5</id>
-            <name>Central Repository</name>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </distributionManagement>-->
 
     <build>
         <plugins>
