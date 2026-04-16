@@ -1,5 +1,8 @@
 package com.sysnormal.commons.core;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Objects;
 
 
@@ -11,6 +14,7 @@ import java.util.Objects;
  */
 public class DefaultDataSwap {
 
+    private static final Logger logger = LoggerFactory.getLogger(DefaultDataSwap.class);
 
     /**
      * the success indicative
@@ -45,15 +49,27 @@ public class DefaultDataSwap {
     }
 
     public void setException(Exception exception) {
-        System.out.println("setting exception");
-        if (Objects.nonNull(exception)) {
-            exception.printStackTrace();
-        }
+        logger.debug("INIT {}.{}",this.getClass().getSimpleName(), "setException");
         this.success = false;
         this.httpStatusCode = Objects.requireNonNullElse(this.httpStatusCode, 500);
         this.exception = exception;
-        if (!(this.message != null && !this.message.isEmpty()) && this.exception != null) {
-            this.message = this.exception.getMessage();
+        if (200 == this.httpStatusCode) {
+            this.httpStatusCode = 500;
+        }
+        if (Objects.nonNull(this.exception)) {
+            if (!(this.message != null && !this.message.isEmpty()) && this.exception != null) {
+                this.message = this.exception.getMessage();
+            }
+            this.exception.printStackTrace();
+        }
+        logger.debug("END {}.{}",this.getClass().getSimpleName(), "setException");
+    }
+
+    public void throwError() throws Exception {
+        if (this.exception != null) {
+            throw this.exception;
+        } else {
+            throw new Exception(this.message);
         }
     }
 }
