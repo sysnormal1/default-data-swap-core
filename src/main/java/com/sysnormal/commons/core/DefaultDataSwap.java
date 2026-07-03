@@ -48,6 +48,16 @@ public class DefaultDataSwap {
         this.message = message;
     }
 
+    public DefaultDataSwap(DefaultDataSwap oldDataSwap, boolean ignoreException) {
+        this.success = oldDataSwap.success;
+        this.data = oldDataSwap.data;
+        this.message = oldDataSwap.message;
+        this.httpStatusCode = oldDataSwap.httpStatusCode;
+        if (!ignoreException) {
+            this.exception = oldDataSwap.exception;
+        }
+    }
+
     public void setException(Exception exception) {
         logger.debug("INIT {}.{}",this.getClass().getSimpleName(), "setException");
         this.success = false;
